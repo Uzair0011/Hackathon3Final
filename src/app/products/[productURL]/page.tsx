@@ -44,8 +44,8 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         <p className="text-gray-700">{product.description}</p>
         <button className="w-[200px] py-3 bg-black text-white rounded-md hover:bg-gray-800 snipcart-add-item"
           data-item-id="product-id"
-          data-item-name="Product Name"
-          data-item-price="25.00"
+          data-item-name={product.title}
+          data-item-price={product.price}
           data-item-url="/product-page-url"
           data-item-description="Short description of the product">
           Add to Cart

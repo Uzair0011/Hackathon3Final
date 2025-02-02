@@ -21,10 +21,18 @@ export default function ProductDetail() {
             artisan finish.
           </p>
           <p className="text-[36px] font-medium py-5">₹ 8 695.00</p>
-          <button className="w-[175px] h-[44px] bg-black flex items-center justify-center gap-2 text-white rounded-full ">
+          {/* <button className="w-[175px] h-[44px] bg-black flex items-center justify-center gap-2 text-white rounded-full ">
             <Image src="/buy.png" alt="logo" width={29} height={20} />
             Add To Cart
-          </button>
+          </button> */}
+               <button className="w-[200px] py-3 bg-black text-white rounded-md hover:bg-gray-800 snipcart-add-item"
+          data-item-id="product-id"
+          data-item-name="Product Name"
+          data-item-price="25.00"
+          data-item-url="/product-page-url"
+          data-item-description="Short description of the product">
+          Add to Cart
+        </button>
         </div>
       </div>
     </div>
