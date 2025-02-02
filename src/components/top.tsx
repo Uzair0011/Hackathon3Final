@@ -10,7 +10,7 @@ export default function Top() {
    
       {/* Right */}
       <ul className="flex flex-wrap justify-end items-center gap-3 text-[10px] sm:text-[11px] font-normal">
-       <li className="hover:underline"><Link href="/">Find a Store</Link></li>
+       <li className="hover:underline"><Link href="/products">Find a Store</Link></li>
         <div className="hidden sm:block">|</div>
         <li className="hover:underline"><Link href="/help">Help</Link></li>
         <div className="hidden sm:block">|</div>

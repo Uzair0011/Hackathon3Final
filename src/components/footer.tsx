@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
     <div
@@ -10,10 +11,14 @@ export default function Footer() {
           {/* <!-- Column 1 --> */}
           <ul className="w-full sm:w-auto  flex flex-col leading-6 mb-5 ">
             <li className="hover:underline cursor-pointer">Find A Store</li>
-            <li className="hover:underline cursor-pointer">Become A Member</li>
             <li className="hover:underline cursor-pointer">
-              Sign Up for Email
+              <Link href="/joinUs"> Become A Member</Link>
             </li>
+
+            <li className="hover:underline">
+              <Link href="/joinUs"> Sign Up for Email</Link>
+            </li>
+
             <li className="hover:underline cursor-pointer">Send Us Feedback</li>
             <li className="hover:underline cursor-pointer">
               Student Discounts
@@ -30,7 +35,6 @@ export default function Footer() {
             <li className="hover:underline cursor-pointer">
               Contact Us On Nike.com
             </li>
-           
           </ul>
 
           {/* <!-- Column 3 --> */}

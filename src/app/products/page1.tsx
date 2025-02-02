@@ -41,15 +41,15 @@ export default function AllProducts() {
   }
 
   return (
-    <div className="px-6 pt-8">
-      <div className="w-full h-auto flex flex-wrap gap-4 justify-between">
+    <div className="px-6 pt-8 ">
+      <div className="w-full h-auto flex flex-wrap gap-4 justify-center lg:justify-between">
         {products.map((product) => (
           <div
             key={product.productURL}
-            className="w-[250px] flex flex-col items-center border p-4 rounded-lg shadow-md"
+            className="w-[250px] flex flex-col items-center border p-4 rounded-lg shadow-md "
           >
             <Link href={`/products/${product.productURL}`}>
-              <div className="w-full h-[270px] flex items-center justify-center bg-gray-100 cursor-pointer">
+              <div className="w-full h-[270px] flex items-center justify-center bg-gray-100 cursor-pointer ">
                 {product.image?.[0] ? (
                   <Image
                     src={urlFor(product.image[0]).url()} // Ensure the first image exists

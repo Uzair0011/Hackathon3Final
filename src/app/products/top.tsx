@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 export default function TopHead() {
   return (
-    <div className="w-full h-auto  flex justify-between ">
+    <div className="w-full h-auto  flex justify-between px-6 ">
       <div>
         <h1 className="text-[24px] font-medium ">New (500)</h1>
       </div>

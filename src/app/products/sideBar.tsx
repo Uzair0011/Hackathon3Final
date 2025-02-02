@@ -16,7 +16,7 @@ export default function SideBar() {
     setShowButton3(!showButton3);
   };
   return (
-    <div className="px-6">
+    <div className="px-6 hidden lg:flex">
       <div className="flex justify-between">
         {/* new list  */}
 

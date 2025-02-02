@@ -14,7 +14,9 @@ export default function Hello() {
         <div data-aos="fade-up" className="text-[14px] sm:text-[16px] mt-2">
           Download the app to access everything Nike.{" "}
           <button className="text-blue-500">
-            <u>Get Your Great</u>
+            <Link href="/products">
+              <u>Get Your Great</u>
+            </Link>{" "}
           </button>
         </div>
       </div>
